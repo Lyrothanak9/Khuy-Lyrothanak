@@ -12,7 +12,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 border-b border-slate-300 dark:border-slate-600 transition-none">
+    <header className="sticky top-0 border-b border-slate-300 dark:border-slate-600 transition-none bg-background-light dark:bg-background-dark">
       <div className="max-w-6xl mx-auto flex justify-between items-center h-16 px-4">
         <div className="flex items-center gap-2">
           <HiCommandLine className="text-2xl text-slate-700 dark:text-slate-300 hover:text-blue-800 dark:hover:text-blue-400 transition-colors duration-200" />

@@ -52,11 +52,11 @@ export default function Hero() {
                     </div>
                 </div>
                 {/* Image */}
-                <div className="relative flex justify-center">
+                <div className="flex justify-center">
                     <img
                         src={Iamge}
                         alt="profile"
-                        className="w-80 h-80 rounded-3xl object-cover shadow-lg border-4 border-slate-700 transition-transform duration-300 hover:scale-105"
+                        className="w-80 h-80 rounded-3xl object-cover shadow-lg border-4 border-slate-700 transition-transform duration-200 hover:scale-105"
                     />
                 </div>
             </div>
