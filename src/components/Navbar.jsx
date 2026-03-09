@@ -1,15 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { HiCommandLine } from "react-icons/hi2";
 
 export default function Navbar() {
   const [dark, setDark] = useState(true);
+  useEffect(() => {
+    document.documentElement.classList.add("dark");
+  }, []);
   const toggleTheme = () => {
     document.documentElement.classList.toggle("dark");
     setDark(!dark);
   };
 
   return (
-    <header className="sticky top-0 border-b bg-white dark:bg-slate-900 ">
+    <header className="sticky top-0 border-b border-slate-300 dark:border-slate-600 transition-none">
       <div className="max-w-6xl mx-auto flex justify-between items-center h-16 px-4">
         <div className="flex items-center gap-2">
           <HiCommandLine className="text-2xl text-slate-700 dark:text-slate-300 hover:text-blue-800 dark:hover:text-blue-400 transition-colors duration-200" />
