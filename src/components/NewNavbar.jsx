@@ -19,23 +19,48 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-300 dark:border-slate-600 transition-none bg-background-light dark:bg-background-dark">
+    <header className="sticky top-0 z-50 border-b border-slate-300 dark:border-slate-600 transition-none bg-background-light dark:bg-[#0f172a]">
       <div className="max-w-6xl mx-auto flex justify-between items-center h-16 px-4">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <HiCommandLine className="text-xl sm:text-2xl text-slate-700 dark:text-slate-300 hover:text-blue-800 dark:hover:text-blue-400 transition-colors duration-200" />
-          <span className="text-lg sm:text-xl font-bold tracking-tight text-slate-700 dark:text-slate-300 hover:text-blue-800 dark:hover:text-blue-400 transition-colors duration-200">
+          <HiCommandLine className="text-2xl text-black dark:text-white" />
+          <span className="text-lg sm:text-2xl font-bold tracking-tight text-black dark:text-white">
             Khuy Lyrothanak
           </span>
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-6 font-bold dark:text-slate-300">
-          <a href="#home" className="hover:text-blue-800 dark:hover:text-blue-400 transition-colors duration-200 text-sm lg:text-base">Home</a>
-          <a href="#about" className="hover:text-blue-800 dark:hover:text-blue-400 transition-colors duration-200 text-sm lg:text-base">About</a>
-          <a href="#skills" className="hover:text-blue-800 dark:hover:text-blue-400 transition-colors duration-200 text-sm lg:text-base">Skills</a>
-          <a href="#projects" className="hover:text-blue-800 dark:hover:text-blue-400 transition-colors duration-200 text-sm lg:text-base">Projects</a>
-          <a href="#contact" className="hover:text-blue-800 dark:hover:text-blue-400 transition-colors duration-200 text-sm lg:text-base">Contact</a>
+        <nav className="hidden md:flex gap-6 font-bold dark:text-slate-200">
+          <a
+            href="#home"
+            className="px-4 py-2 rounded-full text-black hover:bg-slate-200 dark:text-white dark:hover:bg-slate-700 transition duration-300"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            className="px-4 py-2 rounded-full text-black hover:bg-slate-200 dark:text-white dark:hover:bg-slate-700 transition duration-300"
+          >
+            About
+          </a>
+          <a
+            href="#skills"
+            className="px-4 py-2 rounded-full text-black hover:bg-slate-200 dark:text-white dark:hover:bg-slate-700 transition duration-300"
+          >
+            Skills
+          </a>
+          <a
+            href="#projects"
+            className="px-4 py-2 rounded-full text-black hover:bg-slate-200 dark:text-white dark:hover:bg-slate-700 transition duration-300"
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            className="px-4 py-2 rounded-full text-black hover:bg-slate-200 dark:text-white dark:hover:bg-slate-700 transition duration-300"
+          >
+            Contact
+          </a>
         </nav>
 
         {/* Theme Toggle & Mobile Menu Button */}
@@ -45,10 +70,10 @@ export default function Navbar() {
             onClick={toggleTheme}
           >
             <span className="flex items-center gap-1 dark:hidden">
-              <span className="material-symbols-outlined text-lg text-slate-700 font-bold">
+              <span className="material-symbols-outlined text-lg text-black font-bold">
                 dark_mode
               </span>
-              <span className="hidden sm:inline text-sm font-bold text-slate-700">Dark</span>
+              <span className="hidden sm:inline text-sm font-bold text-black">Dark</span>
             </span>
 
             <span className="hidden items-center gap-1 dark:flex">
@@ -62,7 +87,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden flex items-center justify-center w-10 h-10 rounded-lg border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-white hover:bg-slate-200 dark:hover:bg-slate-700 transition duration-300"
+            className="md:hidden flex items-center justify-center w-10 h-10 rounded-lg border border-slate-300 dark:border-slate-600 text-black dark:text-white hover:bg-slate-200 dark:hover:bg-slate-700 transition duration-300"
           >
             <span className="material-symbols-outlined">
               {menuOpen ? "close" : "menu"}
@@ -78,35 +103,35 @@ export default function Navbar() {
             <a
               href="#home"
               onClick={() => setMenuOpen(false)}
-              className="px-4 py-2 rounded-lg text-slate-700 hover:bg-slate-200 dark:text-white dark:hover:bg-slate-700 transition duration-300"
+              className="px-4 py-2 rounded-lg text-black hover:bg-slate-200 dark:text-white dark:hover:bg-slate-700 transition duration-300"
             >
               Home
             </a>
             <a
               href="#about"
               onClick={() => setMenuOpen(false)}
-              className="px-4 py-2 rounded-lg text-slate-700 hover:bg-slate-200 dark:text-white dark:hover:bg-slate-700 transition duration-300"
+              className="px-4 py-2 rounded-lg text-black hover:bg-slate-200 dark:text-white dark:hover:bg-slate-700 transition duration-300"
             >
               About
             </a>
             <a
               href="#skills"
               onClick={() => setMenuOpen(false)}
-              className="px-4 py-2 rounded-lg text-slate-700 hover:bg-slate-200 dark:text-white dark:hover:bg-slate-700 transition duration-300"
+              className="px-4 py-2 rounded-lg text-black hover:bg-slate-200 dark:text-white dark:hover:bg-slate-700 transition duration-300"
             >
               Skills
             </a>
             <a
               href="#projects"
               onClick={() => setMenuOpen(false)}
-              className="px-4 py-2 rounded-lg text-slate-700 hover:bg-slate-200 dark:text-white dark:hover:bg-slate-700 transition duration-300"
+              className="px-4 py-2 rounded-lg text-black hover:bg-slate-200 dark:text-white dark:hover:bg-slate-700 transition duration-300"
             >
               Projects
             </a>
             <a
               href="#contact"
               onClick={() => setMenuOpen(false)}
-              className="px-4 py-2 rounded-lg text-slate-700 hover:bg-slate-200 dark:text-white dark:hover:bg-slate-700 transition duration-300"
+              className="px-4 py-2 rounded-lg text-black hover:bg-slate-200 dark:text-white dark:hover:bg-slate-700 transition duration-300"
             >
               Contact
             </a>

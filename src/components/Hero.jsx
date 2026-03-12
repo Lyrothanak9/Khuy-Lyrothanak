@@ -1,63 +1,36 @@
 import Iamge from "../assets/image.png";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-// import { FaGitlab } from "react-icons/fa";
-import { SiGitlab } from "react-icons/si";
+import { IoMdArrowRoundForward } from "react-icons/io";
+import { MdOutlineFileDownload } from "react-icons/md";
 
 export default function Hero() {
     return (
-        <section id="home" className="min-h-screen flex items-center px-12">
-            <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-10">
-                {/* text detail */}
-                <div className="space-y-8">
-                    <h1 className="text-6xl font-extrabold dark:text-slate-300 tracking-tight">
-                        Khuy Lyrothanak
-                    </h1>
-                    <div>
-                        <q className="max-w-2 leading-relaxed dark:text-slate-300 tracking-tight">
-                            Hello! I'm Khuy Lyrothanak, a 21-year-old Mobile App Developer and
-                            third-year Information Technology Engineering student at the Royal
-                            University of Phnom Penh. I am passionate about building modern
-                            mobile applications and continuously improving my skills in
-                            software development and new technologies.
-                        </q>
-                    </div>
-                    <div className="flex gap-4 mt-6">
-                        <a
-                            href="https://github.com/Lyrothanak9"
-                            className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-200 text-slate-700 hover:bg-slate-300 
-                                    dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-700 
-                                    transition-colors duration-300"
-                        >
-                            {/* github */} <FaGithub className="text-4xl" />
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/in/ly-rothanak-501271325/"
-                            className="w-10 h-10 flex items-center justify-center rounded-full 
-                                        bg-slate-200 text-slate-700 hover:bg-slate-300 
-                                        dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-700
-                                        transition-colors duration-300"
-                        >
-                            {/* linkedin */} <FaLinkedinIn className="text-3xl" />
-                        </a>
-                        <a
-                            href="https://gitlab.com/Lyrothanak9"
-                            className="w-10 h-10 flex items-center justify-center rounded-full 
-                                        bg-slate-200 text-slate-700 hover:bg-slate-300 
-                                        dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-700
-                                         transition-colors duration-300"
-                        >
-                            {/* Gitlab */} <SiGitlab className="text-3xl" />
-                        </a>
-                    </div>
+        <section id = "home" className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-24 px-4 sm:px-0">
+            {/* left side of Hero section */}
+            <div className="order-2 lg:order-1">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 sm:mb-6 leading-tight dark:text-white text-black">
+                    Khuy Lyrothanak
+                </h1>
+                <p className="text-lg sm:text-xl md:text-2xl text-slate-800 dark:text-slate-300 mb-6 sm:mb-8 font-medium">
+                    Software Engineer
+                </p>
+                <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+                    <button className="bg-black hover:bg-gray-800 dark:bg-[#03346E] dark:hover:bg-[#022a5a] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all hover:scale-105 whitespace-nowrap">
+                        View Projects 
+                        <IoMdArrowRoundForward />
+                    </button>
+                    {/* button install  */}
+                    <button className="bg-black hover:bg-gray-800 dark:bg-[#03346E] dark:hover:bg-[#022a5a] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all hover:scale-105 whitespace-nowrap">
+                        Download CV
+                        <MdOutlineFileDownload />
+                    </button>
                 </div>
-                {/* Image */}
-                <div className="flex justify-center">
-                    <img
-                        src={Iamge}
-                        alt="profile"
-                        className="w-80 h-80 rounded-3xl object-cover shadow-lg border-4 border-slate-700 transition-transform duration-200 hover:scale-105"
-                    />
+            </div>
+                {/* right side of Hero section */}
+            <div className="order-1 lg:order-2 flex justify-center">
+                <div className="relative w-full max-w-[250px] sm:max-w-[350px] lg:max-w-[400px] aspect-square rounded-2xl overflow-hidden bg-slate-200 dark:bg-slate-800 border-4 border-white
+                dark:border-slate-700 shadow-2xl">
+                    <div className="absolute inset-0 bg-gradient-to-tr"></div>
+                    <img src={Iamge} alt="Profile" />
                 </div>
             </div>
         </section>
