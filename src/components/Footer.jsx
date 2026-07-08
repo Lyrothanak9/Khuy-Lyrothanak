@@ -6,8 +6,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex items-center gap-2">
-            <HiCommandLine className="text-2xl text-slate-700 dark:text-slate-300 hover:text-blue-800 dark:hover:text-blue-400 transition-colors duration-200" />
-            <span className="text-xl font-bold tracking-tight text-slate-700 dark:text-slate-300 ">
+            <HiCommandLine className="text-2xl text-[#00174B] dark:text-white transition-colors duration-200" />
+            <span className="text-xl font-bold tracking-tight text-[#00174B] dark:text-white ">
               Khuy Lyrothanak
             </span>
           </div>
