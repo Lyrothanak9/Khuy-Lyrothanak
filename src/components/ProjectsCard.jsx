@@ -35,7 +35,7 @@ export default function ProjectsCard() {
       {projects.map((project) => (
         <article
           key={project.title}
-          className="flex flex-col rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-primary/10 overflow-hidden group hover:shadow-xl hover:shadow-primary/10 transition-all duration-300"
+          className="flex flex-col rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-primary/10 overflow-hidden group transition-all duration-300"
         >
           {/* Image */}
           <div className="h-48 overflow-hidden bg-slate-200 dark:bg-slate-700">
